@@ -38,9 +38,11 @@ module.exports = function() {
   this.use(poweredBy('Locomotive'));
   this.use(express.logger());
   this.use(express.favicon());
+  this.use("/images", express.static(__dirname + '/../../images'));
   this.use(express.static(__dirname + '/../../resources'));
-  this.use(express.static(__dirname + '/../../images'));
   this.use(express.bodyParser());
   this.use(express.methodOverride());
+  this.use(express.compress());
   this.use(this.router);
+  
 }
