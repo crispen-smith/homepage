@@ -2,10 +2,7 @@
 <% block('title',  "Live, Share; Crispen Smith's Online Portfolio") -%>
 <% block('description',  "Crispen Smith is passionate about the ways that the internet makes it possible for us to live our truths and share our stories.  Good design lies at the heart of this experience.") -%>
 <div id= "branches" class= "scene">
-	<nav role = "navigation" class = "nav">
-	 <ul><li class="selected" data-ref = "1"><a >1</a></li> <li data-ref = "2"><a>2</a></li><li data-ref = "3"><a>3</a></li></ul>
-	</nav>
-    <div data-picture data-alt="Green Moss on Branches of a Sambucus nigra">
+    <div data-picture data-alt="Green Moss on Branches of a Sambucus nigra" class="bg">
         <div data-src="/images/mossy-branch/small.jpg"></div>
         <div data-src="/images/mossy-branch/medium.jpg"     data-media="(min-width: 400px)"></div>
         <div data-src="/images/mossy-branch/medium_large.jpg"      data-media="(min-width: 800px)"></div>
@@ -16,5 +13,48 @@
             <img src="external/imgs/small.jpg" alt="Green Moss on Branches of a Sambucus nigra">
         </noscript>
     </div>
+    <div class = scene-contents>
+    <segment {position: relative z-index: 1; } >
+     <h1 class="announcement">Crispen Smith</h1>
+     <blockquote class = "heading">Live your truth, Share your story</blockquote>
+     </segment>
+     
+    </div>
+</div>
+<div id= "trees" class= "scene">
+    <div data-picture data-alt="mossy trunks in a forest" class="bg">
+        <div data-src="/images/trees/small.jpg"></div>
+        <div data-src="/images/trees/medium.jpg"     data-media="(min-width: 400px)"></div>
+        <div data-src="/images/trees/medium_large.jpg"      data-media="(min-width: 800px)"></div>
+        <div data-src="/images/trees/large.jpg" data-media="(min-width: 1000px)"></div>
+
+        <!-- Fallback content for non-JS browsers. Same img src as the initial, unqualified source element. -->
+        <noscript>
+            <img src="external/imgs/small.jpg" alt="mossy trunks in a forest">
+        </noscript>
+    </div>
+    <div class = scene-contents>
+    <segment {position: relative z-index: 1; } >
+    </segment>
+     
+    </div>
 </div>
 
+<div id= "board" class= "scene">
+    <div data-picture data-alt="integrated circuit board" class="bg">
+        <div data-src="/images/board/small.jpg"></div>
+        <div data-src="/images/board/medium.jpg"     data-media="(min-width: 400px)"></div>
+        <div data-src="/images/board/medium_large.jpg"      data-media="(min-width: 800px)"></div>
+        <div data-src="/images/board/large.jpg" data-media="(min-width: 1000px)"></div>
+
+        <!-- Fallback content for non-JS browsers. Same img src as the initial, unqualified source element. -->
+        <noscript>
+            <img src="external/imgs/small.jpg" alt="integrated circuit board">
+        </noscript>
+    </div>
+    <div class = scene-contents>
+    <segment {position: relative z-index: 1; } >
+    </segment>
+     
+    </div>
+</div>

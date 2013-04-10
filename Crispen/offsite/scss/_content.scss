@@ -1,0 +1,53 @@
+/* Crispen/Crispen/Offsite/scss/_content.scss actual interface pieces */
+
+.announcement {
+  	font-family: Montserrat;
+	z-index: 300;
+	position: relative;
+	padding-left: .1em;
+&:after {
+	width: 7.35em;
+	height: 1.25em;
+	padding: 0 .025em;
+	top: 0;
+	left: -.1rem;
+    @include panelBack; }
+}
+
+@media (min-width: 500px) {
+  .announcement {
+    font-size: 3rem;
+    margin: 1.5rem auto auto 2rem; }}
+@media (max-width: 499px) {
+  .announcement {
+    font-size: 2rem;
+    margin: .5rem; }}
+
+.heading {
+	position: relative;
+	margin: .75rem auto auto 5.7rem;
+	padding-left: .1em;
+	font: {
+	  size: 1.5em;
+	  family: Montserrat; 
+	  }	
+	padding: .25em;
+	&:before {
+	  width: 26rem;
+	  height: 2em;
+	  top: -.25rem;
+	  left: -.25rem;
+	  @include panelBack(30%, 30%, 30%, 30%);
+	}
+}
+
+@media (max-width: 499px) {
+	.heading {
+	  margin: .75rem auto auto 2rem;
+	  font: {
+	    size: 1rem;
+	  }
+	  &:before {
+	    width: 17rem; }
+	}
+}

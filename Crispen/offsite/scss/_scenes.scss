@@ -2,64 +2,27 @@
 the other being the content branch, a div with appropriate children. */
 
 .scene {
-	height: 100%;
-	position: fixed;
-	top: -50%;
-	left: -50%;
-	width: 200%;
-	height: 200%; }
+  position: relative;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%; }
 
-.scene img {
- position: absolute;
- top: 0;
- left: 0;
- right: 0;
- bottom: 0;
- margin: auto;
- 
- min-width: 100%;
- min-height: 100%;
- z-index: 1; }
+.bg img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: 1; }
 
-.nav { 
-	position: fixed;
-	text-align: center;
-	z-index: 50;
-	top: 0;
-	bottom: 0;
-	left: 0;
-	margin: auto auto 1em auto; 
-	right: 0;
-	height: 1.5em;
-	
-}
-
-.nav li:before {
-	content: attr(data-ref);
-	position: absolute;
-	width: 1rem;
-	height: 2rem;
-	padding: 0 .5em;
-	top: -.25rem;
-	left: -.3rem;
-	background-color: white;
-	border: thin solid black;
-	opacity: .5;
-	border-radius: 30%; 
-    box-shadow:  inset 5px 4px 12px  -3px #686; }
-
-.nav li {
-	position: relative;
-	display: inline;
-	color: #242;
-	padding: 0 .45em;
-	margin: 0 .25em;
-	font-size: 1.5em;
-	line-height: 1.5;
-	background: none; 
-	&:first-child { margin-right: .1em; }
-}
-
-.nav li.selected:before {
-	opacity: .7;
-}
+.scene-contents { /*Sizing for the actual content container */
+  z-index:  500;
+  position:  relative;
+  width:  auto;
+  height: auto;
+  top:  25%;
+  left:  25%; }

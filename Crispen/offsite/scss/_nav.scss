@@ -1,0 +1,39 @@
+/* /Crispen/Crispen/Offsite/scss/_nav.scss  The Nav module */
+
+
+.nav { 
+  position: fixed;
+  text-align: center;
+  z-index: 50;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto auto 1em auto; 
+  right: 0;
+  height: 1.5em; }
+
+.nav a {
+  cursor: pointer; 
+  &:before {
+  width: .75rem;
+  height: 2.25rem;
+  padding: 0 .5em;
+  top: -.25rem;
+  left: -.3rem;
+  @include panelBack(30%, 30%, 30%, 30%, .5); } }
+
+.nav li {
+  z-index: 500;
+  position: relative;
+  display: inline;
+  color: #242;
+  padding: 0 .35em;
+  margin: 0 .25em;
+  font-size: 1.5em;
+  line-height: 1.5;
+  background: none; 
+  &:first-child { margin-right: .2em; padding: 0 0.45em; } }
+
+.nav a.selected:before {
+	opacity: 1;
+}

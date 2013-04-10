@@ -1,7 +1,5 @@
-/*Get the Montserrat and Oxygen fonts from google
 @import url(http://fonts.googleapis.com/css?family=Montserrat:700|Oxygen:300);
-
-
+/*Get the Montserrat and Oxygen fonts from google */
 /* apply a natural box layout model to all elements */
 /* http://paulirish.com/2012/box-sizing-border-box-ftw/ */
 * {
@@ -14,7 +12,7 @@
   top: 0; }
 
 body, select, input, textarea {
-  color: #443333; }
+  color: #202420; }
 
 a {
   color: #440044; }
@@ -65,19 +63,19 @@ html {
 body {
   width: 100%;
   height: 100%;
-  margin: 0 auto; }
+  margin: 0 auto;
+  font-family: Oxygen; }
 
 /* Scenes are the individual pages, they are a div with two children; the first being the fitimage friendly picture for the background
 the other being the content branch, a div with appropriate children. */
 .scene {
-  height: 100%;
-  position: fixed;
+  position: relative;
   top: -50%;
   left: -50%;
   width: 200%;
   height: 200%; }
 
-.scene img {
+.bg img {
   position: absolute;
   top: 0;
   left: 0;
@@ -88,6 +86,72 @@ the other being the content branch, a div with appropriate children. */
   min-height: 100%;
   z-index: 1; }
 
+.scene-contents {
+  /*Sizing for the actual content container */
+  z-index: 500;
+  position: relative;
+  width: auto;
+  height: auto;
+  top: 25%;
+  left: 25%; }
+
+/* Crispen/Crispen/Offsite/scss/_content.scss actual interface pieces */
+.announcement {
+  font-family: Montserrat;
+  z-index: 300;
+  position: relative;
+  padding-left: .1em; }
+  .announcement:after {
+    width: 7.35em;
+    height: 1.25em;
+    padding: 0 .025em;
+    top: 0;
+    left: -.1rem;
+    content: " ";
+    position: absolute;
+    background-color: white;
+    border: thin solid black;
+    opacity: 0.75;
+    border-radius: 10% 30% 10% 30%;
+    box-shadow: inset 5px 4px 12px -3px #686;
+    z-index: -1; }
+
+@media (min-width: 500px) {
+  .announcement {
+    font-size: 3rem;
+    margin: 1.5rem auto auto 2rem; } }
+@media (max-width: 499px) {
+  .announcement {
+    font-size: 2rem;
+    margin: .5rem; } }
+.heading {
+  position: relative;
+  margin: .75rem auto auto 5.7rem;
+  padding-left: .1em;
+  font-size: 1.5em;
+  font-family: Montserrat;
+  padding: .25em; }
+  .heading:before {
+    width: 26rem;
+    height: 2em;
+    top: -.25rem;
+    left: -.25rem;
+    content: " ";
+    position: absolute;
+    background-color: white;
+    border: thin solid black;
+    opacity: 0.75;
+    border-radius: 30% 30% 30% 30%;
+    box-shadow: inset 5px 4px 12px -3px #686;
+    z-index: -1; }
+
+@media (max-width: 499px) {
+  .heading {
+    margin: .75rem auto auto 2rem;
+    font-size: 1rem; }
+    .heading:before {
+      width: 17rem; } }
+/* /Crispen/Crispen/Offsite/scss/_nav.scss  The Nav module */
 .nav {
   position: fixed;
   text-align: center;
@@ -99,31 +163,36 @@ the other being the content branch, a div with appropriate children. */
   right: 0;
   height: 1.5em; }
 
-.nav li:before {
-  content: attr(data-ref);
-  position: absolute;
-  width: 1rem;
-  height: 2rem;
-  padding: 0 .5em;
-  top: -.25rem;
-  left: -.3rem;
-  background-color: white;
-  border: thin solid black;
-  opacity: .5;
-  border-radius: 30%;
-  box-shadow: inset 5px 4px 12px -3px #686; }
+.nav a {
+  cursor: pointer; }
+  .nav a:before {
+    width: .75rem;
+    height: 2.25rem;
+    padding: 0 .5em;
+    top: -.25rem;
+    left: -.3rem;
+    content: " ";
+    position: absolute;
+    background-color: white;
+    border: thin solid black;
+    opacity: 0.5;
+    border-radius: 30% 30% 30% 30%;
+    box-shadow: inset 5px 4px 12px -3px #686;
+    z-index: -1; }
 
 .nav li {
+  z-index: 500;
   position: relative;
   display: inline;
   color: #242;
-  padding: 0 .45em;
+  padding: 0 .35em;
   margin: 0 .25em;
   font-size: 1.5em;
   line-height: 1.5;
   background: none; }
   .nav li:first-child {
-    margin-right: .1em; }
+    margin-right: .2em;
+    padding: 0 0.45em; }
 
-.nav li.selected:before {
-  opacity: .7; }
+.nav a.selected:before {
+  opacity: 1; }
