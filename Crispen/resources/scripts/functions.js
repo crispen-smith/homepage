@@ -29,8 +29,19 @@ scenes.swipe ( {
 
 function swipeStatus(event, phase, direction, distance, fingers)
 { 
-
+  
 }
+
+	function scrollImages(distance, duration)
+		{
+			var support = $.support
+			scenes.css("-webkit-transition-duration", (duration/1000).toFixed(1) + "s");
+
+			//inverse the number we set in the css
+			var value = (distance<0 ? "" : "-") + Math.abs(distance).toString();
+
+			scenes.css("-webkit-transform", "translate3d("+value +"px,0px,0px)");
+		}
 });
 
 
