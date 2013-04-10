@@ -87,7 +87,10 @@
 <script>window.jQuery || document.write("<script src='/resources/scripts/jquery-1.9.1.min.js'>\x3C/script>")</script>
 
 <!-- this is where we put our custom functions -->
+<script type="text/javascript" src="http://labs.skinkers.com/content/touchSwipe/jquery.touchSwipe.min.js"></script>
 <script src="/resources/scripts/functions.js"></script>
+<script src="/resources/scripts/prefixfree.min.js"></script>
+<script src="/resources/scripts/picturefill.js"></script> <!--  Note: do roll-up before live load -->
 
 <!-- Asynchronous google analytics; this is the official snippet.
 	 Replace UA-XXXXXX-XX with your site's ID and uncomment to enable.
@@ -106,6 +109,7 @@
 
 </script>
 -->
+<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
   
 </body>
 </html>

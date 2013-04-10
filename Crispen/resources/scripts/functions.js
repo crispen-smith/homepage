@@ -15,8 +15,22 @@
 /* trigger when page is ready */
 $(document).ready(function (){
 
-	// your functions go here
+/*Call Picture fill inline so that results can be acted on. */
 
+
+
+var scenes = $(".scene");
+
+scenes.swipe ( {
+			triggerOnTouchEnd : true,
+			swipeStatus : swipeStatus,
+			allowPageScroll:"vertical"
+});
+
+function swipeStatus(event, phase, direction, distance, fingers)
+{ 
+
+}
 });
 
 

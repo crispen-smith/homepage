@@ -1,5 +1,5 @@
-/*Get the Rufina and Rosarivo fonts from google
-@import url(http://fonts.googleapis.com/css?family=Rosarivo|Rufina);
+/*Get the Montserrat and Oxygen fonts from google
+@import url(http://fonts.googleapis.com/css?family=Montserrat:700|Oxygen:300);
 
 
 /* apply a natural box layout model to all elements */
@@ -60,10 +60,70 @@ textarea:-moz-placeholder {
 
 html {
   height: 100%;
-  background-color: black;
-  background: url("/Images/candy_stripe.jpg") repeat; }
+  background-color: black; }
 
 body {
   width: 100%;
   height: 100%;
   margin: 0 auto; }
+
+/* Scenes are the individual pages, they are a div with two children; the first being the fitimage friendly picture for the background
+the other being the content branch, a div with appropriate children. */
+.scene {
+  height: 100%;
+  position: fixed;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%; }
+
+.scene img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: 1; }
+
+.nav {
+  position: fixed;
+  text-align: center;
+  z-index: 50;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto auto 1em auto;
+  right: 0;
+  height: 1.5em; }
+
+.nav li:before {
+  content: attr(data-ref);
+  position: absolute;
+  width: 1rem;
+  height: 2rem;
+  padding: 0 .5em;
+  top: -.25rem;
+  left: -.3rem;
+  background-color: white;
+  border: thin solid black;
+  opacity: .5;
+  border-radius: 30%;
+  box-shadow: inset 5px 4px 12px -3px #686; }
+
+.nav li {
+  position: relative;
+  display: inline;
+  color: #242;
+  padding: 0 .45em;
+  margin: 0 .25em;
+  font-size: 1.5em;
+  line-height: 1.5;
+  background: none; }
+  .nav li:first-child {
+    margin-right: .1em; }
+
+.nav li.selected:before {
+  opacity: .7; }

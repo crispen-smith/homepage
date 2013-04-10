@@ -1,3 +1,4 @@
+//Crispen/Crispen/Config/Environments/all.js
 var express = require('express')
   , poweredBy = require('connect-powered-by')
   , engine = require('ejs-locals')
@@ -39,7 +40,7 @@ module.exports = function() {
   this.use(express.logger());
   this.use(express.favicon());
   this.use("/images", express.static(__dirname + '/../../images'));
-  this.use(express.static(__dirname + '/../../resources'));
+  this.use("/resources", express.static(__dirname + '/../../resources'));
   this.use(express.bodyParser());
   this.use(express.methodOverride());
   this.use(express.compress());
