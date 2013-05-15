@@ -96,44 +96,43 @@ the other being the content branch, a div with appropriate children. */
   left: 25%; }
 
 /* Crispen/Crispen/Offsite/scss/_content.scss actual interface pieces */
-.announcement {
-  font-family: Montserrat;
-  z-index: 300;
+.vh1_frame .title {
   position: relative;
+  z-index: 300;
+  margin: .75rem auto auto 1rem;
+  font-family: Montserrat;
+  font-font-size: 2rem;
   padding-left: .1em; }
-  .announcement:after {
-    width: 7.35em;
-    height: 1.25em;
-    padding: 0 .025em;
-    top: 0;
+  .vh1_frame .title:after {
+    width: 9em;
+    height: 1.5em;
+    top: -.25rem;
     left: -.1rem;
     content: " ";
     position: absolute;
     background-color: white;
     border: thin solid black;
     opacity: 0.75;
-    border-radius: 10% 30% 10% 30%;
+    border-radius: 10% 10% 10% 10%;
     box-shadow: inset 5px 4px 12px -3px #686;
     z-index: -1; }
-
-@media (min-width: 500px) {
-  .announcement {
-    font-size: 3rem;
-    margin: 1.5rem auto auto 2rem; } }
-@media (max-width: 499px) {
-  .announcement {
-    font-size: 2rem;
-    margin: .5rem; } }
-.heading {
+  @media (min-width: 500px) {
+    .vh1_frame .title {
+      font-size: 2rem; }
+      .vh1_frame .title:after {
+        width: 9em;
+        height: 1.25em;
+        top: 0rem; } }
+.vh1_frame .subtitle {
   position: relative;
-  margin: .75rem auto auto 5.7rem;
+  margin: .5rem auto auto 2rem;
   padding-left: .1em;
-  font-size: 1.5em;
+  font-size: .9rem;
   font-family: Montserrat;
   padding: .25em; }
-  .heading:before {
-    width: 26rem;
-    height: 2em;
+  .vh1_frame .subtitle:before {
+    width: 15.25rem;
+    height: 2.25em;
     top: -.25rem;
     left: -.25rem;
     content: " ";
@@ -141,16 +140,139 @@ the other being the content branch, a div with appropriate children. */
     background-color: white;
     border: thin solid black;
     opacity: 0.75;
-    border-radius: 30% 30% 30% 30%;
+    border-radius: 10% 10% 10% 10%;
     box-shadow: inset 5px 4px 12px -3px #686;
     z-index: -1; }
+  @media (min-width: 500px) {
+    .vh1_frame .subtitle {
+      margin: .75rem auto auto 5rem;
+      font-size: 1.5rem; }
+      .vh1_frame .subtitle:before {
+        width: 25.5rem; } }
 
-@media (max-width: 499px) {
-  .heading {
-    margin: .75rem auto auto 2rem;
-    font-size: 1rem; }
-    .heading:before {
-      width: 17rem; } }
+.vh2_frame {
+  position: absolute;
+  margin-top: 3em;
+  height: 12em;
+  width: 15em;
+  left: 2em;
+  font-size: 1rem;
+  font-family: Oxygen;
+  padding: 1em 2em; }
+  .vh2_frame:before {
+    width: 110%;
+    height: 110%;
+    top: -1em;
+    left: -.25rem;
+    content: " ";
+    position: absolute;
+    background-color: white;
+    border: thin solid black;
+    opacity: 0.9;
+    border-radius: 3% 3% 3% 3%;
+    box-shadow: inset 5px 4px 12px -3px #686;
+    z-index: -1; }
+  @media screen and (min-width: 450px) {
+    .vh2_frame {
+      left: 25%;
+      width: 20em;
+      margin-left: -10em; } }
+  @media screen and (min-width: 600px) {
+    .vh2_frame {
+      width: 25em;
+      margin-left: -12.5em; } }
+  @media screen and (min-width: 700px) {
+    .vh2_frame {
+      width: 30em;
+      margin-left: -15em; } }
+  @media screen and (min-width: 800px) {
+    .vh2_frame {
+      width: 35em;
+      margin-left: -17.5em; } }
+  @media screen and (min-width: 1000px) {
+    .vh2_frame {
+      width: 40em;
+      margin-left: -20em; } }
+  @media screen and (min-height: 450px) {
+    .vh2_frame {
+      height: 18em; } }
+  @media screen and (min-height: 500px) {
+    .vh2_frame {
+      margin-top: 4em;
+      height: 16em; } }
+  @media screen and (min-height: 600px) {
+    .vh2_frame {
+      margin-top: 8em;
+      height: 15em; } }
+  @media screen and (min-height: 700px) {
+    .vh2_frame {
+      margin-top: 8em;
+      height: 25em; } }
+  @media screen and (min-height: 1000px) {
+    .vh2_frame {
+      height: 35em; } }
+  .vh2_frame .scroller {
+    position: relative;
+    width: 120%;
+    height: 90%;
+    left: 1em;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    padding-right: 1em;
+    margin-left: -1em; }
+    @media screen and (min-width: 500px) {
+      .vh2_frame .scroller {
+        margin-left: 0;
+        width: 108%; } }
+  .vh2_frame .title {
+    margin: -.75em auto .5em -1em;
+    font-size: .9em;
+    font-family: Montserrat; }
+    .vh2_frame .title:after {
+      font-size: .9em;
+      content: '';
+      height: 0;
+      width: 90%;
+      border-top: 1px solid white;
+      border-bottom: 1px solid black;
+      opacity: .1;
+      position: absolute;
+      top: 1.5em;
+      left: 2em; }
+    @media screen and (min-width: 500px) {
+      .vh2_frame .title {
+        margin-left: .5em;
+        font-size: 1.25em; }
+        .vh2_frame .title:after {
+          width: 100%; } }
+  .vh2_frame .subtitle {
+    padding: 0;
+    width: 80%;
+    left: -2em;
+    text-align: center;
+    position: relative;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    font-weight: bold;
+    font-size: .75em; }
+    .vh2_frame .subtitle:after {
+      content: " ";
+      width: 120%;
+      height: 150%;
+      left: -1em;
+      top: -.5em;
+      position: absolute;
+      background-color: white;
+      opacity: .3;
+      box-shadow: inset 5px 4px 12px -3px #686;
+      z-index: -1;
+      box-shadow: 0 2px 3px 0px #866; }
+    @media screen and (min-height: 500px) {
+      .vh2_frame .subtitle {
+        text-align: left;
+        paddding: .5em 0em;
+        font-size: 1em; } }
+
 /* /Crispen/Crispen/Offsite/scss/_nav.scss  The Nav module */
 .nav {
   position: fixed;
@@ -196,3 +318,26 @@ the other being the content branch, a div with appropriate children. */
 
 .nav a.selected:before {
   opacity: 1; }
+
+/* /Crispen/SCSS/_flag.scss */
+.flag__image,
+.flag__body {
+  display: table-cell;
+  vertical-align: middle; }
+  .flag--top .flag__image, .flag--top
+  .flag__body {
+    vertical-align: top; }
+  .flag--bottom .flag__image, .flag--bottom
+  .flag__body {
+    vertical-align: bottom; }
+
+.flag__image {
+  padding-right: 10px; }
+  .flag__image > img {
+    display: block; }
+  .flag--rev .flag__image {
+    padding-right: 0;
+    padding-left: 10px; }
+
+.flag__body {
+  width: 100%; }

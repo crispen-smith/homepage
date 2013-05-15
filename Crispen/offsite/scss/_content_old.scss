@@ -1,0 +1,322 @@
+/* Crispen/Crispen/Offsite/scss/_content.scss actual interface pieces */
+
+.vh1_intro {
+  	font-family: Montserrat;
+	z-index: 300;
+	position: relative;
+	padding-left: .1em;
+&:after {
+	width: 7.35em;
+	height: 1.25em;
+	padding: 0 .025em;
+	top: 0;
+	left: -.1rem;
+    @include panelBack; }
+}
+
+@media (min-width: 500px) {
+  .vh1_intro {
+    font-size: 3rem;
+    margin: 1.5rem auto auto 2rem; }}
+@media (max-width: 499px) {
+  .vh1_intro {
+    font-size: 2rem;
+    margin: .5rem; }}
+
+.vh2_intro {
+	position: relative;
+	margin: .75rem auto auto 5.7rem;
+	padding-left: .1em;
+	font: {
+	  size: 1.5em;
+	  family: Montserrat; 
+	  }	
+	padding: .25em;
+	&:before {
+	  width: 26rem;
+	  height: 2em;
+	  top: -.25rem;
+	  left: -.25rem;
+	  @include panelBack(30%, 30%, 30%, 30%);
+	}
+}
+
+@media (max-width: 499px) {
+	.vh2_intro {
+	  margin: .75rem auto auto 2rem;
+	  font: {
+	    size: 1rem;
+	  }
+	  &:before {
+	    width: 17rem; }
+	}
+}
+/* Define global VH3_frame elements */
+.vh3_frame {
+	position: relative;
+	font: {
+	  size: 1rem;
+	  family: Oxygen;
+	   
+	  }	
+	padding: .5em 2em;
+	&:before {
+	  width: 110%;
+	  height: 110%;
+	  top: -1em;
+	  left: -.25rem;
+	  @include panelBack(3%, 3%, 3%, 3%);
+	}
+}
+
+.vh3_scroller {
+	position: relative;
+	width: 108%;
+	height: 100%;
+	overflow: auto;	
+	left: 1em;
+	padding-right: 1em;
+}
+
+ .vh3_title {
+ margin: -.5em auto .5em .5em;
+ font: {
+ 	size: 1.25em;
+ 	family: Montserrat;
+ }
+ &:after {
+  content: '';
+  height: 0;
+  width: 100%;
+  border-top: 1px solid white;
+  border-bottom: 1px solid black;
+  opacity: .1;
+  position: absolute;
+  top: 1em;
+  left: 2em; 
+ }
+}
+/* Media queries for the VH3_Frame and children */
+
+/* Define large window (default) sizing and layout */
+@media screen and (min-width: 1030px)  {
+.vh3_frame {
+	margin: 10rem auto auto 12rem;
+	width: 70em;
+	height: 20em;
+}
+
+.vh3_scroller {
+	width: 108%;
+	height: 100%;
+}
+
+ .vh3_title {
+ margin: -.5em auto .5em .5em;
+ font: {
+ 	size: 1.25em;
+ }
+ &:after {
+  top: 1em;
+  left: 2em; 
+ }
+}
+
+	
+}
+
+/* target small browsers in portrait mode */
+@media screen and (max-width: 400px) and (min-height: 321px) {
+	.vh3_frame {
+	  margin: 2em auto auto 3em;
+	  padding-top: .5em;
+	  padding-left: .0em;
+	  width: 16em;
+	  height: 18em;
+	  &:before { 
+	  	height: 110%;
+	  	top: -.5rem; 
+	  	left: -1.5rem;
+	  }
+	}
+	
+	.vh3_title {
+	font: {
+	 size: 1em;}
+	margin-left: 0em;
+	&:after {
+	left: 0.5em; 
+	width: 90%;}
+	}
+	
+}
+
+/* target small browser in landscape mode */
+@media screen and (max-width: 590px) and (max-height: 350px) {
+	.vh3_frame {
+	  margin: 1.5em auto auto 3em;
+	  padding-top: .5rem;
+	  width: 25em;
+	  height: 9.5em;
+	  &:before { 
+	  	height: 120%;
+	  	top: -.5rem; 
+	  	left: -1.5rem;
+	  }
+	}
+	
+	.vh3_title {
+	font: {
+	 size: 1.1em;}
+	margin-left: -1em;
+	&:after {
+	left: 0.5em; 
+	width: 90%;}
+	}
+	
+	.vh3_scroller {
+	margin-left: -2em;
+	width: 118%;}
+	
+}
+
+@media screen and (min-width: 591px) and (max-width: 800px) {
+	.vh3_frame {
+	  margin: 1.5em auto auto 6.5em;
+	  padding-top: .5rem;
+	  width: 28em;
+	  height: 30em;
+	  &:before { 
+	  	height: 120%;
+	  	top: -.5rem; 
+	  	left: -1.5rem;
+	  }
+	}
+	
+	.vh3_title {
+	font: {
+	 size: 1.1em;}
+	margin-left: -1em;
+	&:after {
+	left: 0.5em; 
+	width: 100%;}
+	}
+	
+	.vh3_scroller {
+	margin-left: -2em;
+	width: 118%;}
+	
+}
+
+@media screen and (min-width: 591px) and (max-width: 690px) and (max-height: 650px) {
+	.vh3_frame {
+	  margin: 1.5em auto auto 6.5em;
+	  padding-top: .5rem;
+	  width: 28em;
+	  height: 20em;
+	  &:before { 
+	  	height: 120%;
+	  	top: -.5rem; 
+	  	left: -1.5rem;
+	  }
+	}
+	
+	.vh3_title {
+	font: {
+	 size: 1.1em;}
+	margin-left: -1em;
+	&:after {
+	left: 0.5em; 
+	width: 100%;}
+	}
+	
+	.vh3_scroller {
+	margin-left: -2em;
+	width: 118%;}
+	
+}
+
+@media screen and (min-width: 691px) and (max-width: 800px) and (max-height: 650px) {
+	.vh3_frame {
+	  margin: 1.5em auto auto 6.5em;
+	  padding-top: .5rem;
+	  width: 35em;
+	  height: 20em;
+	  &:before { 
+	  	height: 120%;
+	  	top: -.5rem; 
+	  	left: -1.5rem;
+	  }
+	}
+	
+	.vh3_title {
+	font: {
+	 size: 1.1em;}
+	margin-left: -1em;
+	&:after {
+	left: 0.5em; 
+	width: 100%;}
+	}
+	
+	.vh3_scroller {
+	margin-left: -2em;
+	width: 112%;}
+	
+}
+
+@media screen and (min-width: 760px) and (max-width: 900px) and (min-height: 651px) {
+	.vh3_frame {
+	  margin: 10em auto auto 6.5em;
+	  padding-top: .5rem;
+	  width: 37em;
+	  height: 20em;
+	  &:before { 
+	  	height: 120%;
+	  	top: -.5rem; 
+	  	left: -1.5rem;
+	  }
+	}
+	
+	.vh3_title {
+	font: {
+	 size: 1.1em;}
+	margin-left: -1em;
+	&:after {
+	left: 0.5em; 
+	width: 100%;}
+	}
+	
+	.vh3_scroller {
+	margin-left: -2em;
+	width: 115%}
+		
+}
+
+@media screen and (min-width: 901px) and (max-width: 1029px) and (min-height: 651px) {
+	.vh3_frame {
+	  margin: 10em auto auto 6.5em;
+	  padding-top: .5rem;
+	  width: 50em;
+	  height: 20em;
+	  &:before { 
+	  	height: 120%;
+	  	top: -.5rem; 
+	  	left: -1.5rem;
+	  }
+	}
+	
+	.vh3_title {
+	font: {
+	 size: 1.1em;}
+	margin-left: -1em;
+	&:after {
+	left: 0.5em; 
+	width: 100%;}
+	}
+	
+	.vh3_scroller {
+	margin-left: -2em;
+	width: 110%;}
+	
+}
+

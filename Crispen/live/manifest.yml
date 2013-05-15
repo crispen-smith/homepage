@@ -1,0 +1,16 @@
+---
+applications:
+  .:
+    name: live_share
+    framework:
+      name: standalone
+      info:
+        mem: 64M
+        description: Standalone Application
+        exec: 
+    runtime: node08
+    command: lcm server
+    infra: aws
+    url: live_share
+    mem: 128M
+    instances: 1

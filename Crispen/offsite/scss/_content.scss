@@ -1,53 +1,208 @@
 /* Crispen/Crispen/Offsite/scss/_content.scss actual interface pieces */
 
-.announcement {
-  	font-family: Montserrat;
-	z-index: 300;
-	position: relative;
-	padding-left: .1em;
-&:after {
-	width: 7.35em;
-	height: 1.25em;
-	padding: 0 .025em;
-	top: 0;
-	left: -.1rem;
-    @include panelBack; }
-}
-
-@media (min-width: 500px) {
-  .announcement {
-    font-size: 3rem;
-    margin: 1.5rem auto auto 2rem; }}
-@media (max-width: 499px) {
-  .announcement {
+.vh1_frame {
+	
+& .title {
+  position: relative;
+  z-index: 300;
+  margin:  .75rem auto auto 1rem;
+  font: {
+    family: Montserrat;
     font-size: 2rem;
-    margin: .5rem; }}
-
-.heading {
-	position: relative;
-	margin: .75rem auto auto 5.7rem;
-	padding-left: .1em;
-	font: {
-	  size: 1.5em;
-	  family: Montserrat; 
-	  }	
-	padding: .25em;
-	&:before {
-	  width: 26rem;
-	  height: 2em;
-	  top: -.25rem;
-	  left: -.25rem;
-	  @include panelBack(30%, 30%, 30%, 30%);
-	}
+  }
+  padding: {
+    left: .1em;
+  }
+  &:after {
+    width: 9em;
+    height: 1.5em;
+    top: -.25rem;
+   	left: -.1rem;
+   	@include panelBack; 
+  }
+  @media (min-width: $small) {
+    font: {
+     size: 2rem;
+    }
+    &:after {
+      width: 9em;
+      height: 1.25em;
+      top: 0rem;
+    }
+  }
 }
 
-@media (max-width: 499px) {
-	.heading {
-	  margin: .75rem auto auto 2rem;
+& .subtitle {
+  position: relative;
+  margin: .5rem auto auto 2rem;
+  padding-left: .1em;
+  font: {
+    size:.9rem;
+    family: Montserrat; 
+  }	
+  padding: .25em;
+  &:before {
+	width: 15.25rem;
+	height: 2.25em;
+	top: -.25rem;
+	left: -.25rem;
+	@include panelBack(10%, 10%, 10%, 10%);
+  }
+
+  @media (min-width: $small) {
+	  margin: .75rem auto auto 5rem;
 	  font: {
-	    size: 1rem;
+	    size: 1.5rem;
 	  }
 	  &:before {
-	    width: 17rem; }
+	    width: 25.5rem;	     
+	  }
 	}
+}
+}
+
+.vh2_frame {
+  position: absolute;
+  margin-top: 3em;
+  height: 12em;
+  width: 15em;
+  left: 2em;
+  font: {
+    size: 1rem;
+    family: Oxygen;
+  }	
+  padding: 1em 2em;
+  &:before {
+    width: 110%;
+	height: 110%;
+	top: -1em;
+	left: -.25rem;
+	@include panelBack(3%, 3%, 3%, 3%,.9);
+  }
+  @media screen and (min-width: $smallest) { 
+    left: 25%;
+    width: 20em;
+    margin-left: -10em;
+  }
+  
+  @media screen and (min-width: $medium) {
+	width: 25em;
+	margin-left: -12.5em;
+  }
+
+  @media screen and (min-width: $large) {
+	width: 30em;
+	margin-left: -15em;
+  }
+  @media screen and (min-width: $xl) {
+	width: 35em;
+	margin-left: -17.5em;
+  }
+
+  @media screen and (min-width: $xxl)   {
+	width: 40em;
+	margin-left: -20em;
+  }
+  
+  @media screen and (min-height: $smallest) {
+    height: 18em;
+  }
+  
+  @media screen and (min-height: $small)  {
+	margin-top: 4em;
+	height: 16em;
+  }
+
+  @media screen and (min-height: $medium) {
+	margin-top: 8em;
+	height: 15em;
+  }
+  
+  @media screen and (min-height: $large) {
+	margin-top: 8em;
+	height: 25em;
+  }
+  
+  @media screen and (min-height: $xxl) {
+    height: 35em;
+  }
+
+ &  .scroller {
+  position: relative;
+  width: 120%;
+  height: 90%; 
+  left: 1em;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  padding-right: 1em;
+  margin-left: -1em;
+  
+  @media screen and (min-width: $small)  {
+    margin: {
+      left: 0;
+    }
+	width: 108%;
+  }
+}
+
+ &  .title {
+   margin: -.75em auto .5em -1em;
+   font: {
+     size: .9em;
+     family: Montserrat;
+   }
+   &:after {
+     font: {
+       size: .9em;
+     }
+    content: '';
+    height: 0;
+    width: 90%;
+    border-top: 1px solid white;
+    border-bottom: 1px solid black;
+    opacity: .1;
+    position: absolute;
+    top: 1.5em;
+    left: 2em; 
+  }
+  @media screen and (min-width: $small) {
+    margin: {
+      left: .5em;
+    }
+    font:{
+      size: 1.25em;
+    }
+    &:after {
+      width: 100%;
+    }   
+  }
+}
+
+ & .subtitle {
+  padding: 0;
+  width: 80%;
+  left: -2em;
+  text: {
+    align: center;
+  }
+  position: relative;
+  margin-top: 2em;
+  margin: {
+    bottom: 2em;
+  }
+  font: {
+    weight: bold;
+    size: .75em;
+  }
+  &:after {
+    @include panelWell;
+  }	
+  @media screen and (min-height: $small) {
+    text-align: left;
+    paddding: .5em 0em;
+    font: {
+      size: 1em;
+    }
+  }
+}
 }

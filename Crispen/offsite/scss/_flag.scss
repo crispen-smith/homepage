@@ -1,0 +1,32 @@
+/* /Crispen/SCSS/_flag.scss */
+
+    .flag__image,
+    .flag__body{
+        display:table-cell;
+        vertical-align:middle;
+
+        .flag--top &{
+            vertical-align:top;
+        }
+
+        .flag--bottom &{
+            vertical-align:bottom;
+        }
+    }
+
+    .flag__image{
+        padding-right:10px;
+
+        > img{
+            display:block;
+        }
+
+        .flag--rev &{
+            padding-right:0;
+            padding-left:10px;
+        }
+    }
+
+    .flag__body{
+        width:100%;
+    }

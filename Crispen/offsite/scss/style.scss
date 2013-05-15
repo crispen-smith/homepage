@@ -1,7 +1,14 @@
 /*Get the Montserrat and Oxygen fonts from google */
 @import url(http://fonts.googleapis.com/css?family=Montserrat:700|Oxygen:300);
 
-@mixin panelBack($tl: 10%, $tr: 30%, $br: 10%, $bl: 30%, $opacity: .75) {
+$smallest: 450px;
+$small: 500px;
+$medium: 600px;
+$large: 700px;
+$xl: 800px;
+$xxl: 1000px;
+
+@mixin panelBack($tl: 10%, $tr: 10%, $br: 10%, $bl: 10%, $opacity: .75) {
 	content: " ";
 	position: absolute;
 	background-color: white;
@@ -11,6 +18,23 @@
     box-shadow:  inset 5px 4px 12px  -3px #686; 
     z-index: -1;
 }
+
+
+@mixin panelWell() {
+	content: " ";
+	width: 120%;
+	height: 150%;
+	left: -1em;
+	top: -.5em;
+	position: absolute;
+	background-color: white;
+	opacity: .3;
+	box-shadow:  inset 5px 4px 12px  -3px #686; 
+    z-index: -1;
+    box-shadow: 0 2px 3px 0px #866;
+    
+}
+
 
 
 /* apply a natural box layout model to all elements */
@@ -84,3 +108,4 @@ body {
 @import "scenes";
 @import "content";
 @import "nav";
+@import "flag";

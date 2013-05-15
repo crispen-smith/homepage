@@ -1,0 +1,344 @@
+@import url(http://fonts.googleapis.com/css?family=Montserrat:700|Oxygen:300);
+/*Get the Montserrat and Oxygen fonts from google */
+/* apply a natural box layout model to all elements */
+/* http://paulirish.com/2012/box-sizing-border-box-ftw/ */
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+.chromeframe {
+  position: absolute;
+  top: 0; }
+
+body, select, input, textarea {
+  color: #202420; }
+
+a {
+  color: #440044; }
+
+a:hover {
+  color: #880088; }
+
+a:active {
+  color: #fdd; }
+
+/* Custom text-selection colors (remove any text shadows: twitter.com/miketaylr/status/12228805301) */
+::-moz-selection {
+  background: #fcd700;
+  color: #fff;
+  text-shadow: none; }
+
+::selection {
+  background: #FFF;
+  color: #fff;
+  text-shadow: none; }
+
+/*	j.mp/webkit-tap-highlight-color */
+a:link {
+  -webkit-tap-highlight-color: #fcd700; }
+
+ins {
+  background-color: #fcd700;
+  color: #000;
+  text-decoration: none; }
+
+mark {
+  background-color: #fcd700;
+  color: #000;
+  font-style: italic;
+  font-weight: bold; }
+
+/* Mozilla dosen't style place holders by default */
+input:-moz-placeholder {
+  color: #a9a9a9; }
+
+textarea:-moz-placeholder {
+  color: #a9a9a9; }
+
+html {
+  height: 100%;
+  background-color: black; }
+
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  font-family: Oxygen; }
+
+/* Scenes are the individual pages, they are a div with two children; the first being the fitimage friendly picture for the background
+the other being the content branch, a div with appropriate children. */
+.scene {
+  position: relative;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%; }
+
+.bg img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: 1; }
+
+.scene-contents {
+  /*Sizing for the actual content container */
+  z-index: 500;
+  position: relative;
+  width: auto;
+  height: auto;
+  top: 25%;
+  left: 25%; }
+
+/* Crispen/Crispen/Offsite/scss/_content.scss actual interface pieces */
+.vh1_title {
+  position: relative;
+  z-index: 300;
+  margin: .75rem auto auto 1rem;
+  font-family: Montserrat;
+  font-font-size: 2rem;
+  padding-left: .1em; }
+  .vh1_title:after {
+    width: 7.75em;
+    height: 1.5em;
+    top: -.25rem;
+    left: -.1rem;
+    content: " ";
+    position: absolute;
+    background-color: white;
+    border: thin solid black;
+    opacity: 0.75;
+    border-radius: 10% 10% 10% 10%;
+    box-shadow: inset 5px 4px 12px -3px #686;
+    z-index: -1; }
+  @media (min-width: 500px) {
+    .vh1_title {
+      font-size: 2rem; }
+      .vh1_title:after {
+        width: 7.5em;
+        height: 1.25em;
+        top: 0rem; } }
+
+.vh1_subtitle {
+  position: relative;
+  margin: .5rem auto auto 2rem;
+  padding-left: .1em;
+  font-size: .9rem;
+  font-family: Montserrat;
+  padding: .25em; }
+  .vh1_subtitle:before {
+    width: 15.25rem;
+    height: 2.25em;
+    top: -.25rem;
+    left: -.25rem;
+    content: " ";
+    position: absolute;
+    background-color: white;
+    border: thin solid black;
+    opacity: 0.75;
+    border-radius: 10% 10% 10% 10%;
+    box-shadow: inset 5px 4px 12px -3px #686;
+    z-index: -1; }
+  @media (min-width: 500px) {
+    .vh1_subtitle {
+      margin: .75rem auto auto 5rem;
+      font-size: 1.5rem; }
+      .vh1_subtitle:before {
+        width: 25.5rem; } }
+
+.vh2_frame {
+  position: absolute;
+  margin-top: 3em;
+  height: 12em;
+  width: 15em;
+  left: 2em;
+  font-size: 1rem;
+  font-family: Oxygen;
+  padding: 1em 2em; }
+  .vh2_frame:before {
+    width: 110%;
+    height: 110%;
+    top: -1em;
+    left: -.25rem;
+    content: " ";
+    position: absolute;
+    background-color: white;
+    border: thin solid black;
+    opacity: 0.9;
+    border-radius: 3% 3% 3% 3%;
+    box-shadow: inset 5px 4px 12px -3px #686;
+    z-index: -1; }
+  @media screen and (min-width: 450px) {
+    .vh2_frame {
+      left: 25%;
+      width: 20em;
+      margin-left: -10em; } }
+  @media screen and (min-width: 600px) {
+    .vh2_frame {
+      width: 25em;
+      margin-left: -12.5em; } }
+  @media screen and (min-width: 700px) {
+    .vh2_frame {
+      width: 30em;
+      margin-left: -15em; } }
+  @media screen and (min-width: 800px) {
+    .vh2_frame {
+      width: 35em;
+      margin-left: -17.5em; } }
+  @media screen and (min-width: 1000px) {
+    .vh2_frame {
+      width: 40em;
+      margin-left: -20em; } }
+  @media screen and (min-height: 450px) {
+    .vh2_frame {
+      height: 18em; } }
+  @media screen and (min-height: 500px) {
+    .vh2_frame {
+      margin-top: 4em;
+      height: 16em; } }
+  @media screen and (min-height: 600px) {
+    .vh2_frame {
+      margin-top: 8em;
+      height: 15em; } }
+  @media screen and (min-height: 700px) {
+    .vh2_frame {
+      margin-top: 8em;
+      height: 25em; } }
+  @media screen and (min-height: 1000px) {
+    .vh2_frame {
+      height: 35em; } }
+  .vh2_frame .scroller {
+    position: relative;
+    width: 120%;
+    height: 90%;
+    left: 1em;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    padding-right: 1em;
+    margin-left: -1em; }
+    @media screen and (min-width: 500px) {
+      .vh2_frame .scroller {
+        margin-left: 0;
+        width: 108%; } }
+  .vh2_frame .title {
+    margin: -.75em auto .5em -1em;
+    font-size: .9em;
+    font-family: Montserrat; }
+    .vh2_frame .title:after {
+      font-size: .9em;
+      content: '';
+      height: 0;
+      width: 90%;
+      border-top: 1px solid white;
+      border-bottom: 1px solid black;
+      opacity: .1;
+      position: absolute;
+      top: 1.5em;
+      left: 2em; }
+    @media screen and (min-width: 500px) {
+      .vh2_frame .title {
+        margin-left: .5em;
+        font-size: 1.25em; }
+        .vh2_frame .title:after {
+          width: 100%; } }
+  .vh2_frame .subtitle {
+    padding: 0;
+    width: 80%;
+    left: -2em;
+    text-align: center;
+    position: relative;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    font-weight: bold;
+    font-size: .75em; }
+    .vh2_frame .subtitle:after {
+      content: " ";
+      width: 120%;
+      height: 150%;
+      left: -1em;
+      top: -.5em;
+      position: absolute;
+      background-color: white;
+      opacity: .3;
+      box-shadow: inset 5px 4px 12px -3px #686;
+      z-index: -1;
+      box-shadow: 0 2px 3px 0px #866; }
+    @media screen and (min-height: 500px) {
+      .vh2_frame .subtitle {
+        text-align: left;
+        paddding: .5em 0em;
+        font-size: 1em; } }
+
+/* /Crispen/Crispen/Offsite/scss/_nav.scss  The Nav module */
+.nav {
+  position: fixed;
+  text-align: center;
+  z-index: 50;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto auto 1em auto;
+  right: 0;
+  height: 1.5em; }
+
+.nav a {
+  cursor: pointer; }
+  .nav a:before {
+    width: .75rem;
+    height: 2.25rem;
+    padding: 0 .5em;
+    top: -.25rem;
+    left: -.3rem;
+    content: " ";
+    position: absolute;
+    background-color: white;
+    border: thin solid black;
+    opacity: 0.5;
+    border-radius: 30% 30% 30% 30%;
+    box-shadow: inset 5px 4px 12px -3px #686;
+    z-index: -1; }
+
+.nav li {
+  z-index: 500;
+  position: relative;
+  display: inline;
+  color: #242;
+  padding: 0 .35em;
+  margin: 0 .25em;
+  font-size: 1.5em;
+  line-height: 1.5;
+  background: none; }
+  .nav li:first-child {
+    margin-right: .2em;
+    padding: 0 0.45em; }
+
+.nav a.selected:before {
+  opacity: 1; }
+
+/* /Crispen/SCSS/_flag.scss */
+.flag__image,
+.flag__body {
+  display: table-cell;
+  vertical-align: middle; }
+  .flag--top .flag__image, .flag--top
+  .flag__body {
+    vertical-align: top; }
+  .flag--bottom .flag__image, .flag--bottom
+  .flag__body {
+    vertical-align: bottom; }
+
+.flag__image {
+  padding-right: 10px; }
+  .flag__image > img {
+    display: block; }
+  .flag--rev .flag__image {
+    padding-right: 0;
+    padding-left: 10px; }
+
+.flag__body {
+  width: 100%; }
