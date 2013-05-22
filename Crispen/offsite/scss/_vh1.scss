@@ -1,0 +1,62 @@
+/* Crispen/Crispen/Offsite/scss/_vh1.scss Headers for content */
+
+.vh1_frame {
+	
+& .title {
+  position: relative;
+  z-index: 300;
+  margin:  .75rem auto auto 1rem;
+  font: {
+    family: Montserrat;
+    font-size: 1.5rem;
+  }
+  padding: {
+    left: .1em;
+  }
+  &:before {
+    width: 110%;
+    height: 100%;
+    top: 0;
+   	left: -.25em;
+   	@include panelBack; 
+  }
+  @media (min-width: $small) {
+    font: {
+     size: 2rem;
+    }
+  }
+}
+
+& .subtitle {
+  position: relative;
+  margin: .5rem auto auto 2rem;
+  padding-left: .1em;
+  font: {
+    size: .5rem;
+    family: Montserrat; 
+  }	
+  padding: .25em;
+  &:before {
+	width: 105%;
+	height: 1.5em;
+	top: 0;
+	left: -.5em;
+	@include panelBack(10%, 10%, 10%, 10%);
+  }
+
+  @media (min-width: $small) {
+	  margin: .75rem auto auto 5rem;
+	  font: {
+	    size: 1.5rem;
+	  }
+	}
+}
+}
+
+.shrinkwrap {
+	display: inline-block;
+}
+
+.spacer {
+	height: 1px;
+}
