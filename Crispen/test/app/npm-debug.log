@@ -1,0 +1,275 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files\\nodejs\\\\node.exe',
+1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install',
+1 verbose cli   'locomotive' ]
+2 info using npm@1.2.14
+3 info using node@v0.10.0
+4 verbose node symlink C:\Program Files\nodejs\\node.exe
+5 verbose read json c:\Users\Public\Documents\Crispen\Crispen\live\package.json
+6 verbose read json c:\Users\Public\Documents\Crispen\Crispen\live\node_modules\connect-powered-by\package.json
+7 verbose read json c:\Users\Public\Documents\Crispen\Crispen\live\node_modules\ejs\package.json
+8 verbose read json c:\Users\Public\Documents\Crispen\Crispen\live\node_modules\ejs-locals\package.json
+9 verbose read json c:\Users\Public\Documents\Crispen\Crispen\live\node_modules\express\package.json
+10 verbose read json c:\Users\Public\Documents\Crispen\Crispen\live\node_modules\locomotive\package.json
+11 verbose from cache c:\Users\Public\Documents\Crispen\Crispen\live\package.json
+12 info shrinkwrap file "c:\\Users\\Public\\Documents\\Crispen\\Crispen\\live\\npm-shrinkwrap.json"
+13 verbose readDependencies returned deps { locomotive: '0.3.6',
+13 verbose readDependencies returned deps   express: 'https://registry.npmjs.org/express/-/express-3.1.1.tgz',
+13 verbose readDependencies returned deps   'connect-powered-by': '0.1.0',
+13 verbose readDependencies returned deps   ejs: '0.8.3',
+13 verbose readDependencies returned deps   'ejs-locals': 'https://registry.npmjs.org/ejs-locals/-/ejs-locals-1.0.2.tgz' }
+14 verbose cache add [ 'locomotive@0.3.6', null ]
+15 verbose cache add name=undefined spec="locomotive@0.3.6" args=["locomotive@0.3.6",null]
+16 verbose parsed url { protocol: null,
+16 verbose parsed url   slashes: null,
+16 verbose parsed url   auth: null,
+16 verbose parsed url   host: null,
+16 verbose parsed url   port: null,
+16 verbose parsed url   hostname: null,
+16 verbose parsed url   hash: null,
+16 verbose parsed url   search: null,
+16 verbose parsed url   query: null,
+16 verbose parsed url   pathname: 'locomotive@0.3.6',
+16 verbose parsed url   path: 'locomotive@0.3.6',
+16 verbose parsed url   href: 'locomotive@0.3.6' }
+17 verbose cache add name="locomotive" spec="0.3.6" args=["locomotive","0.3.6"]
+18 verbose parsed url { protocol: null,
+18 verbose parsed url   slashes: null,
+18 verbose parsed url   auth: null,
+18 verbose parsed url   host: null,
+18 verbose parsed url   port: null,
+18 verbose parsed url   hostname: null,
+18 verbose parsed url   hash: null,
+18 verbose parsed url   search: null,
+18 verbose parsed url   query: null,
+18 verbose parsed url   pathname: '0.3.6',
+18 verbose parsed url   path: '0.3.6',
+18 verbose parsed url   href: '0.3.6' }
+19 verbose addNamed [ 'locomotive', '0.3.6' ]
+20 verbose addNamed [ '0.3.6', '0.3.6' ]
+21 silly lockFile ede683f9-locomotive-0-3-6 locomotive@0.3.6
+22 verbose lock locomotive@0.3.6 C:\Users\User\AppData\Roaming\npm-cache\ede683f9-locomotive-0-3-6.lock
+23 verbose url raw locomotive/0.3.6
+24 verbose url resolving [ 'https://registry.npmjs.org/', './locomotive/0.3.6' ]
+25 verbose url resolved https://registry.npmjs.org/locomotive/0.3.6
+26 info trying registry request attempt 1 at 12:12:57
+27 http GET https://registry.npmjs.org/locomotive/0.3.6
+28 http 200 https://registry.npmjs.org/locomotive/0.3.6
+29 silly registry.get cb [ 200,
+29 silly registry.get   { vary: 'Accept',
+29 silly registry.get     server: 'CouchDB/1.3.0 (Erlang OTP/R15B03)',
+29 silly registry.get     etag: '"6KMEHI8MENIWHF4YPQZ0XYBX1"',
+29 silly registry.get     date: 'Mon, 13 May 2013 16:13:02 GMT',
+29 silly registry.get     'content-type': 'application/json',
+29 silly registry.get     'content-length': '4120' } ]
+30 silly lockFile 5209697d--locomotive-locomotive-0-3-6-tgz https://registry.npmjs.org/locomotive/-/locomotive-0.3.6.tgz
+31 verbose lock https://registry.npmjs.org/locomotive/-/locomotive-0.3.6.tgz C:\Users\User\AppData\Roaming\npm-cache\5209697d--locomotive-locomotive-0-3-6-tgz.lock
+32 verbose addRemoteTarball [ 'https://registry.npmjs.org/locomotive/-/locomotive-0.3.6.tgz',
+32 verbose addRemoteTarball   'e29b7c2a99ba15e264917a753b68101c81ec3cdf' ]
+33 info retry fetch attempt 1 at 12:13:00
+34 verbose fetch to= C:\Users\User\AppData\Local\Temp\npm-7424\1368461580957-0.7236643142532557\tmp.tgz
+35 http GET https://registry.npmjs.org/locomotive/-/locomotive-0.3.6.tgz
+36 http 200 https://registry.npmjs.org/locomotive/-/locomotive-0.3.6.tgz
+37 silly shasum updated bytes 27080
+38 info shasum e29b7c2a99ba15e264917a753b68101c81ec3cdf
+38 info shasum C:\Users\User\AppData\Local\Temp\npm-7424\1368461580957-0.7236643142532557\tmp.tgz
+39 verbose tar unpack C:\Users\User\AppData\Local\Temp\npm-7424\1368461580957-0.7236643142532557\tmp.tgz
+40 silly lockFile b6803169-80957-0-7236643142532557-package C:\Users\User\AppData\Local\Temp\npm-7424\1368461580957-0.7236643142532557\package
+41 verbose lock C:\Users\User\AppData\Local\Temp\npm-7424\1368461580957-0.7236643142532557\package C:\Users\User\AppData\Roaming\npm-cache\b6803169-80957-0-7236643142532557-package.lock
+42 silly lockFile 5e249685-80957-0-7236643142532557-tmp-tgz C:\Users\User\AppData\Local\Temp\npm-7424\1368461580957-0.7236643142532557\tmp.tgz
+43 verbose lock C:\Users\User\AppData\Local\Temp\npm-7424\1368461580957-0.7236643142532557\tmp.tgz C:\Users\User\AppData\Roaming\npm-cache\5e249685-80957-0-7236643142532557-tmp-tgz.lock
+44 silly gunzTarPerm modes [ '755', '644' ]
+45 silly gunzTarPerm extractEntry package.json
+46 silly gunzTarPerm extractEntry .npmignore
+47 silly gunzTarPerm extractEntry README.md
+48 silly gunzTarPerm extractEntry LICENSE
+49 silly gunzTarPerm extractEntry .travis.yml
+50 silly gunzTarPerm extractEntry bin/lcm.js
+51 silly gunzTarPerm extractEntry lib/locomotive/utils.js
+52 silly gunzTarPerm extractEntry lib/locomotive/router.js
+53 silly gunzTarPerm extractEntry lib/locomotive/route.js
+54 silly gunzTarPerm extractEntry lib/locomotive/namespace.js
+55 silly gunzTarPerm extractEntry lib/locomotive/controller.js
+56 silly gunzTarPerm extractEntry lib/locomotive/index.js
+57 silly gunzTarPerm extractEntry lib/locomotive/middleware/handle.js
+58 silly gunzTarPerm extractEntry lib/locomotive/middleware/invoke.js
+59 silly gunzTarPerm extractEntry lib/locomotive/helpers/index.js
+60 silly gunzTarPerm extractEntry lib/locomotive/helpers/tag.js
+61 silly gunzTarPerm extractEntry lib/locomotive/helpers/url.js
+62 silly gunzTarPerm extractEntry lib/locomotive/helpers/dynamic/index.js
+63 silly gunzTarPerm extractEntry lib/locomotive/helpers/dynamic/url.js
+64 silly gunzTarPerm extractEntry lib/locomotive/errors/controllererror.js
+65 silly gunzTarPerm extractEntry lib/locomotive/errors/index.js
+66 silly gunzTarPerm extractEntry lib/locomotive/errors/routererror.js
+67 silly gunzTarPerm extractEntry lib/locomotive/datastores/object.js
+68 silly gunzTarPerm extractEntry lib/locomotive/cli/create.js
+69 silly gunzTarPerm extractEntry lib/locomotive/cli/index.js
+70 silly gunzTarPerm extractEntry lib/locomotive/cli/server.js
+71 silly gunzTarPerm extractEntry lib/locomotive/cli/server/debug.js
+72 silly gunzTarPerm extractEntry lib/locomotive/cli/server/watch.js
+73 verbose read json C:\Users\User\AppData\Local\Temp\npm-7424\1368461580957-0.7236643142532557\package\package.json
+74 silly lockFile b6803169-80957-0-7236643142532557-package C:\Users\User\AppData\Local\Temp\npm-7424\1368461580957-0.7236643142532557\package
+75 silly lockFile b6803169-80957-0-7236643142532557-package C:\Users\User\AppData\Local\Temp\npm-7424\1368461580957-0.7236643142532557\package
+76 silly lockFile 5e249685-80957-0-7236643142532557-tmp-tgz C:\Users\User\AppData\Local\Temp\npm-7424\1368461580957-0.7236643142532557\tmp.tgz
+77 silly lockFile 5e249685-80957-0-7236643142532557-tmp-tgz C:\Users\User\AppData\Local\Temp\npm-7424\1368461580957-0.7236643142532557\tmp.tgz
+78 verbose from cache C:\Users\User\AppData\Local\Temp\npm-7424\1368461580957-0.7236643142532557\package\package.json
+79 verbose tar pack [ 'C:\\Users\\User\\AppData\\Roaming\\npm-cache\\locomotive\\0.3.6\\package.tgz',
+79 verbose tar pack   'C:\\Users\\User\\AppData\\Local\\Temp\\npm-7424\\1368461580957-0.7236643142532557\\package' ]
+80 verbose tarball C:\Users\User\AppData\Roaming\npm-cache\locomotive\0.3.6\package.tgz
+81 verbose folder C:\Users\User\AppData\Local\Temp\npm-7424\1368461580957-0.7236643142532557\package
+82 silly lockFile b6803169-80957-0-7236643142532557-package C:\Users\User\AppData\Local\Temp\npm-7424\1368461580957-0.7236643142532557\package
+83 verbose lock C:\Users\User\AppData\Local\Temp\npm-7424\1368461580957-0.7236643142532557\package C:\Users\User\AppData\Roaming\npm-cache\b6803169-80957-0-7236643142532557-package.lock
+84 silly lockFile 43322cba-che-locomotive-0-3-6-package-tgz C:\Users\User\AppData\Roaming\npm-cache\locomotive\0.3.6\package.tgz
+85 verbose lock C:\Users\User\AppData\Roaming\npm-cache\locomotive\0.3.6\package.tgz C:\Users\User\AppData\Roaming\npm-cache\43322cba-che-locomotive-0-3-6-package-tgz.lock
+86 silly lockFile b6803169-80957-0-7236643142532557-package C:\Users\User\AppData\Local\Temp\npm-7424\1368461580957-0.7236643142532557\package
+87 silly lockFile b6803169-80957-0-7236643142532557-package C:\Users\User\AppData\Local\Temp\npm-7424\1368461580957-0.7236643142532557\package
+88 silly lockFile 43322cba-che-locomotive-0-3-6-package-tgz C:\Users\User\AppData\Roaming\npm-cache\locomotive\0.3.6\package.tgz
+89 silly lockFile 43322cba-che-locomotive-0-3-6-package-tgz C:\Users\User\AppData\Roaming\npm-cache\locomotive\0.3.6\package.tgz
+90 silly lockFile 7807be7b-m-cache-locomotive-0-3-6-package C:\Users\User\AppData\Roaming\npm-cache\locomotive\0.3.6\package
+91 verbose lock C:\Users\User\AppData\Roaming\npm-cache\locomotive\0.3.6\package C:\Users\User\AppData\Roaming\npm-cache\7807be7b-m-cache-locomotive-0-3-6-package.lock
+92 silly lockFile 7807be7b-m-cache-locomotive-0-3-6-package C:\Users\User\AppData\Roaming\npm-cache\locomotive\0.3.6\package
+93 silly lockFile 7807be7b-m-cache-locomotive-0-3-6-package C:\Users\User\AppData\Roaming\npm-cache\locomotive\0.3.6\package
+94 verbose tar unpack C:\Users\User\AppData\Roaming\npm-cache\locomotive\0.3.6\package.tgz
+95 silly lockFile 7807be7b-m-cache-locomotive-0-3-6-package C:\Users\User\AppData\Roaming\npm-cache\locomotive\0.3.6\package
+96 verbose lock C:\Users\User\AppData\Roaming\npm-cache\locomotive\0.3.6\package C:\Users\User\AppData\Roaming\npm-cache\7807be7b-m-cache-locomotive-0-3-6-package.lock
+97 silly lockFile 43322cba-che-locomotive-0-3-6-package-tgz C:\Users\User\AppData\Roaming\npm-cache\locomotive\0.3.6\package.tgz
+98 verbose lock C:\Users\User\AppData\Roaming\npm-cache\locomotive\0.3.6\package.tgz C:\Users\User\AppData\Roaming\npm-cache\43322cba-che-locomotive-0-3-6-package-tgz.lock
+99 silly gunzTarPerm modes [ '755', '644' ]
+100 silly gunzTarPerm extractEntry package.json
+101 silly gunzTarPerm modified mode [ 'package.json', 438, 420 ]
+102 silly gunzTarPerm extractEntry .npmignore
+103 silly gunzTarPerm modified mode [ '.npmignore', 438, 420 ]
+104 silly gunzTarPerm extractEntry README.md
+105 silly gunzTarPerm modified mode [ 'README.md', 438, 420 ]
+106 silly gunzTarPerm extractEntry LICENSE
+107 silly gunzTarPerm modified mode [ 'LICENSE', 438, 420 ]
+108 silly gunzTarPerm extractEntry .travis.yml
+109 silly gunzTarPerm modified mode [ '.travis.yml', 438, 420 ]
+110 silly gunzTarPerm extractEntry bin/lcm.js
+111 silly gunzTarPerm modified mode [ 'bin/lcm.js', 438, 420 ]
+112 silly gunzTarPerm extractEntry lib/locomotive/utils.js
+113 silly gunzTarPerm modified mode [ 'lib/locomotive/utils.js', 438, 420 ]
+114 silly gunzTarPerm extractEntry lib/locomotive/router.js
+115 silly gunzTarPerm modified mode [ 'lib/locomotive/router.js', 438, 420 ]
+116 silly gunzTarPerm extractEntry lib/locomotive/route.js
+117 silly gunzTarPerm modified mode [ 'lib/locomotive/route.js', 438, 420 ]
+118 silly gunzTarPerm extractEntry lib/locomotive/namespace.js
+119 silly gunzTarPerm modified mode [ 'lib/locomotive/namespace.js', 438, 420 ]
+120 silly gunzTarPerm extractEntry lib/locomotive/controller.js
+121 silly gunzTarPerm modified mode [ 'lib/locomotive/controller.js', 438, 420 ]
+122 silly gunzTarPerm extractEntry lib/locomotive/index.js
+123 silly gunzTarPerm modified mode [ 'lib/locomotive/index.js', 438, 420 ]
+124 silly gunzTarPerm extractEntry lib/locomotive/middleware/handle.js
+125 silly gunzTarPerm modified mode [ 'lib/locomotive/middleware/handle.js', 438, 420 ]
+126 silly gunzTarPerm extractEntry lib/locomotive/middleware/invoke.js
+127 silly gunzTarPerm modified mode [ 'lib/locomotive/middleware/invoke.js', 438, 420 ]
+128 silly gunzTarPerm extractEntry lib/locomotive/helpers/index.js
+129 silly gunzTarPerm modified mode [ 'lib/locomotive/helpers/index.js', 438, 420 ]
+130 silly gunzTarPerm extractEntry lib/locomotive/helpers/tag.js
+131 silly gunzTarPerm modified mode [ 'lib/locomotive/helpers/tag.js', 438, 420 ]
+132 silly gunzTarPerm extractEntry lib/locomotive/helpers/url.js
+133 silly gunzTarPerm modified mode [ 'lib/locomotive/helpers/url.js', 438, 420 ]
+134 silly gunzTarPerm extractEntry lib/locomotive/helpers/dynamic/index.js
+135 silly gunzTarPerm modified mode [ 'lib/locomotive/helpers/dynamic/index.js', 438, 420 ]
+136 silly gunzTarPerm extractEntry lib/locomotive/helpers/dynamic/url.js
+137 silly gunzTarPerm modified mode [ 'lib/locomotive/helpers/dynamic/url.js', 438, 420 ]
+138 silly gunzTarPerm extractEntry lib/locomotive/errors/controllererror.js
+139 silly gunzTarPerm modified mode [ 'lib/locomotive/errors/controllererror.js', 438, 420 ]
+140 silly gunzTarPerm extractEntry lib/locomotive/errors/index.js
+141 silly gunzTarPerm modified mode [ 'lib/locomotive/errors/index.js', 438, 420 ]
+142 silly gunzTarPerm extractEntry lib/locomotive/errors/routererror.js
+143 silly gunzTarPerm modified mode [ 'lib/locomotive/errors/routererror.js', 438, 420 ]
+144 silly gunzTarPerm extractEntry lib/locomotive/datastores/object.js
+145 silly gunzTarPerm modified mode [ 'lib/locomotive/datastores/object.js', 438, 420 ]
+146 silly gunzTarPerm extractEntry lib/locomotive/cli/create.js
+147 silly gunzTarPerm modified mode [ 'lib/locomotive/cli/create.js', 438, 420 ]
+148 silly gunzTarPerm extractEntry lib/locomotive/cli/index.js
+149 silly gunzTarPerm modified mode [ 'lib/locomotive/cli/index.js', 438, 420 ]
+150 silly gunzTarPerm extractEntry lib/locomotive/cli/server.js
+151 silly gunzTarPerm modified mode [ 'lib/locomotive/cli/server.js', 438, 420 ]
+152 silly gunzTarPerm extractEntry lib/locomotive/cli/server/debug.js
+153 silly gunzTarPerm modified mode [ 'lib/locomotive/cli/server/debug.js', 438, 420 ]
+154 silly gunzTarPerm extractEntry lib/locomotive/cli/server/watch.js
+155 silly gunzTarPerm modified mode [ 'lib/locomotive/cli/server/watch.js', 438, 420 ]
+156 verbose read json C:\Users\User\AppData\Roaming\npm-cache\locomotive\0.3.6\package\package.json
+157 silly lockFile 7807be7b-m-cache-locomotive-0-3-6-package C:\Users\User\AppData\Roaming\npm-cache\locomotive\0.3.6\package
+158 silly lockFile 7807be7b-m-cache-locomotive-0-3-6-package C:\Users\User\AppData\Roaming\npm-cache\locomotive\0.3.6\package
+159 silly lockFile 43322cba-che-locomotive-0-3-6-package-tgz C:\Users\User\AppData\Roaming\npm-cache\locomotive\0.3.6\package.tgz
+160 silly lockFile 43322cba-che-locomotive-0-3-6-package-tgz C:\Users\User\AppData\Roaming\npm-cache\locomotive\0.3.6\package.tgz
+161 silly shasum updated bytes 26913
+162 info shasum 7e640ccb47ecd237f5428f10619222d764fbee7b
+162 info shasum C:\Users\User\AppData\Roaming\npm-cache\locomotive\0.3.6\package.tgz
+163 verbose from cache C:\Users\User\AppData\Roaming\npm-cache\locomotive\0.3.6\package\package.json
+164 verbose chmod C:\Users\User\AppData\Roaming\npm-cache\locomotive\0.3.6\package.tgz 644
+165 silly chown skipping for windows C:\Users\User\AppData\Roaming\npm-cache\locomotive\0.3.6\package.tgz
+166 silly lockFile 5209697d--locomotive-locomotive-0-3-6-tgz https://registry.npmjs.org/locomotive/-/locomotive-0.3.6.tgz
+167 silly lockFile 5209697d--locomotive-locomotive-0-3-6-tgz https://registry.npmjs.org/locomotive/-/locomotive-0.3.6.tgz
+168 silly lockFile ede683f9-locomotive-0-3-6 locomotive@0.3.6
+169 silly lockFile ede683f9-locomotive-0-3-6 locomotive@0.3.6
+170 silly resolved [ { name: 'locomotive',
+170 silly resolved     version: '0.3.6',
+170 silly resolved     description: 'Powerful MVC web framework for Node.js.',
+170 silly resolved     author:
+170 silly resolved      { name: 'Jared Hanson',
+170 silly resolved        email: 'jaredhanson@gmail.com',
+170 silly resolved        url: 'http://www.jaredhanson.net/' },
+170 silly resolved     homepage: 'http://locomotivejs.org/',
+170 silly resolved     repository:
+170 silly resolved      { type: 'git',
+170 silly resolved        url: 'git://github.com/jaredhanson/locomotive.git' },
+170 silly resolved     bugs: { url: 'http://github.com/jaredhanson/locomotive/issues' },
+170 silly resolved     main: './lib/locomotive',
+170 silly resolved     bin: { lcm: './bin/lcm.js' },
+170 silly resolved     dependencies:
+170 silly resolved      { pkginfo: '0.2.x',
+170 silly resolved        commander: '1.x.x',
+170 silly resolved        mkdirp: '0.3.x',
+170 silly resolved        diveSync: '0.2.0',
+170 silly resolved        express: '3.x.x',
+170 silly resolved        methods: '0.0.1',
+170 silly resolved        async: '0.1.x',
+170 silly resolved        lingo: '0.0.x',
+170 silly resolved        debug: '0.7.x' },
+170 silly resolved     devDependencies: { vows: '0.6.x' },
+170 silly resolved     scripts: { test: 'NODE_PATH=lib node_modules/.bin/vows test/*-test.js test/**/*-test.js test/**/**/*-test.js' },
+170 silly resolved     engines: { node: '>= 0.6.0' },
+170 silly resolved     licenses: [ [Object] ],
+170 silly resolved     keywords: [ 'express', 'connect', 'web', 'mvc', 'rails' ],
+170 silly resolved     readme: '# Locomotive\n[http://locomotivejs.org](http://locomotivejs.org/)\n\nLocomotive is a framework that brings structure and MVC patterns to web\napplications using [Node](http://nodejs.org) and [Express](http://expressjs.com/).\n\n## Installation\n\n    $ npm install locomotive\n\n## Quick Start\n\n`lcm`, the command line interface to Locomotive, can be used to generate a\nstarter application.  To use it, install Locomotive globally.\n\n    $ npm install locomotive -g\n    \nNext, create an application and install dependencies.\n\n    $ lcm create hello\n    $ cd hello\n    $ npm install\n    \nStart the server.\n\n    $ lcm server\n\nThe application is available at [localhost:3000](http://localhost:3000).\n\nStart the server with node debug mode\n\n\t$ lcm server --debug (node --debug mode)\n\t$ lcm server --debug-brk (node --debug-brk mode)\n\nThen you can use debug tools like [node-inspector](https://github.com/dannycoates/node-inspector) to debug your application as usual.\n\n## Guide\n\nThe [Locomotive Guide](http://locomotivejs.org/guide/) is the official source\nfor documentation, and is a handy reference to have available when developing\nweb applications powered by Locomotive.\n\n## Datastore Adapters\n\n<table>\n  <thead>\n    <tr><th>Adapter</th><th>Description</th><th>Developer</th></tr>\n  </thead>\n  <tbody>\n    <tr><td><a href="https://github.com/jaredhanson/locomotive-mongoose">Mongoose</a></td><td>Mongoose ODM adapter.</td><td></td></tr>\n  </tbody>\n</table>\n\n## Tests\n\n    $ npm install\n    $ make test\n\n[![Build Status](https://secure.travis-ci.org/jaredhanson/locomotive.png)](http://travis-ci.org/jaredhanson/locomotive)\n\n\n## Credits\n\n  - [Jared Hanson](http://github.com/jaredhanson)\n\n## License\n\n(The MIT License)\n\nCopyright (c) 2011 Jared Hanson\n\nPermission is hereby granted, free of charge, to any person obtaining a copy of\nthis software and associated documentation files (the "Software"), to deal in\nthe Software without restriction, including without limitation the rights to\nuse, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of\nthe Software, and to permit persons to whom the Software is furnished to do so,\nsubject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS\nFOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR\nCOPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER\nIN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN\nCONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.\n',
+170 silly resolved     readmeFilename: 'README.md',
+170 silly resolved     _id: 'locomotive@0.3.6',
+170 silly resolved     dist: { shasum: '7e640ccb47ecd237f5428f10619222d764fbee7b' },
+170 silly resolved     _from: 'locomotive@0.3.6',
+170 silly resolved     _resolved: 'https://registry.npmjs.org/locomotive/-/locomotive-0.3.6.tgz' } ]
+171 info install locomotive@0.3.6 into c:\Users\Public\Documents\Crispen\Crispen\live
+172 info installOne locomotive@0.3.6
+173 verbose from cache C:\Users\User\AppData\Roaming\npm-cache\locomotive\0.3.6\package\package.json
+174 info c:\Users\Public\Documents\Crispen\Crispen\live\node_modules\locomotive unbuild
+175 verbose from cache c:\Users\Public\Documents\Crispen\Crispen\live\node_modules\locomotive\package.json
+176 info preuninstall locomotive@0.3.6
+177 info uninstall locomotive@0.3.6
+178 verbose true,c:\Users\Public\Documents\Crispen\Crispen\live\node_modules,c:\Users\Public\Documents\Crispen\Crispen\live\node_modules unbuild locomotive@0.3.6
+179 verbose c:\Users\Public\Documents\Crispen\Crispen\live\node_modules\.bin,[object Object] binRoot
+180 info postuninstall locomotive@0.3.6
+181 info c:\Users\Public\Documents\Crispen\Crispen\live\node_modules\locomotive unbuild
+182 verbose read json c:\Users\Public\Documents\Crispen\Crispen\live\node_modules\locomotive\package.json
+183 error error rolling back Error: EPERM, rmdir 'c:\Users\Public\Documents\Crispen\Crispen\live\node_modules\locomotive\bin'
+183 error error rolling back  locomotive@0.3.6 { [Error: EPERM, rmdir 'c:\Users\Public\Documents\Crispen\Crispen\live\node_modules\locomotive\bin']
+183 error error rolling back   errno: 50,
+183 error error rolling back   code: 'EPERM',
+183 error error rolling back   path: 'c:\\Users\\Public\\Documents\\Crispen\\Crispen\\live\\node_modules\\locomotive\\bin' }
+184 error Error: ENOTEMPTY, rmdir 'c:\Users\Public\Documents\Crispen\Crispen\live\node_modules\locomotive\node_modules\async'
+185 error If you need help, you may report this log at:
+185 error     <http://github.com/isaacs/npm/issues>
+185 error or email it to:
+185 error     <npm-@googlegroups.com>
+186 error System Windows_NT 6.1.7601
+187 error command "C:\\Program Files\\nodejs\\\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install" "locomotive"
+188 error cwd c:\Users\Public\Documents\Crispen\Crispen\live\app
+189 error node -v v0.10.0
+190 error npm -v 1.2.14
+191 error path c:\Users\Public\Documents\Crispen\Crispen\live\node_modules\locomotive\node_modules\async
+192 error code ENOTEMPTY
+193 error errno 53
+194 verbose exit [ 53, true ]

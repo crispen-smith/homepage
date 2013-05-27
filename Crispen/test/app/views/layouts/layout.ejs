@@ -1,0 +1,111 @@
+<!doctype html>
+
+<!--[if lt IE 7 ]> <html class="ie ie6 ie-lt10 ie-lt9 ie-lt8 ie-lt7 no-js" lang="en"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie ie7 ie-lt10 ie-lt9 ie-lt8 no-js" lang="en"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie ie8 ie-lt10 ie-lt9 no-js" lang="en"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie ie9 ie-lt10 no-js" lang="en"> <![endif]-->
+<!--[if gt IE 9]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<!-- the "no-js" class is for Modernizr. --> 
+
+<head id="crispen-smith-portfolio]" data-template-set="html5-reset">
+
+	<meta charset="utf-8">
+	
+	<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	
+	<title><%-blocks.title%></title>
+	
+	<meta name="title" content="<%-blocks.title%>" />
+	<meta name="description" content= "<%-blocks.description%>" />
+	<meta name="author" content="crispen.smith@gmail.com" />
+
+	<!-- Google will often use this as its description of your page/site. Make it good. -->
+	
+	<meta name="google-site-verification" content="" />
+	<!-- Speaking of Google, don't forget to set your site up: http://google.com/webmasters -->
+	
+	<meta name="author" content="crispen.smith@gmail.com" />
+	<meta name="Copyright" content="Crispen Smith 2013. All Rights Reserved." />
+	
+	<!--  Mobile Viewport Fix
+	j.mp/mobileviewport & davidbcalhoun.com/2010/viewport-metatag 
+	device-width : Occupy full width of the screen in its current orientation
+	initial-scale = 1.0 retains dimensions instead of zooming out if page height > device height
+	maximum-scale = 1.0 retains dimensions instead of zooming in if page width < device width
+	-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	
+	<link rel="shortcut icon" href="/images/favicon.ico" />
+	<!-- This is the traditional favicon.
+		 - size: 16x16 or 32x32
+		 - transparency is OK
+		 - see wikipedia for info on browser support: http://mky.be/favicon/ -->
+		 
+	<link rel="apple-touch-icon" href="/images/apple-touch-icon.png" />
+	<!-- The is the icon for iOS's Web Clip.
+		 - size: 57x57 for older iPhones, 72x72 for iPads, 114x114 for iPhone4's retina display (IMHO, just go ahead and use the biggest one)
+		 - To prevent iOS from applying its styles to the icon name it thusly: apple-touch-icon-precomposed.png
+		 - Transparency is not recommended (iOS will put a black BG behind the icon) -->
+	
+	<!-- concatenate and minify for production -->
+	 <link rel="stylesheet" href="/resources/stylesheets/reset.css" />
+	<link rel="stylesheet" href="/resources/stylesheets/style.css" />
+	
+	<!-- This is an un-minified, complete version of Modernizr. 
+		 Before you move to production, you should generate a custom build that only has the detects you need. -->
+	<script src="/resources/scripts/modernizr-2.6.2.dev.js"></script>
+	
+	<!-- Application-specific meta tags -->
+	<!-- Windows 8 -->
+	<meta name="application-name" content="Live, Share; Crispen Smith's Online Portfolio" /> 
+	<meta name="msapplication-TileColor" content="#000000" /> 
+	<meta name="msapplication-TileImage" content="/images/msapplication.png" />
+	<!-- Twitter -->
+	<meta name="twitter:card" content="">
+	<meta name="twitter:site" content="">
+	<meta name="twitter:title" content="">
+	<meta name="twitter:description" content="">
+	<meta name="twitter:url" content="">
+	<!-- Facebook -->
+	<meta property="og:title" content="" />
+	<meta property="og:description" content="" />
+	<meta property="og:url" content="" />
+	<meta property="og:image" content="" />
+
+</head>
+
+<body>
+<%- body -%>
+<nav role = "navigation" class = "nav">
+	<ul><li><a href="#branches"  class="selected">1</a></li> <li ><a href="#trees">2</a></li><li><a href="#board">3</a></li></ul>
+</nav>
+
+
+<!-- Prompt IE 6 users to install Chrome Frame. Remove this if you support IE 6.
+		 chromium.org/developers/how-tos/chrome-frame-getting-started -->
+<!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
+
+<!-- Grab Google CDN's jQuery. fall back to local if necessary -->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script>window.jQuery || document.write("<script src='/resources/scripts/jquery-1.9.1.min.js'>\x3C/script>")</script>
+
+<!-- this is where we put our custom functions -->
+<script type="text/javascript" src="http://labs.skinkers.com/content/touchSwipe/jquery.touchSwipe.min.js"></script>
+<script src="/resources/scripts/functions.js"></script>
+<script src="/resources/scripts/prefixfree.min.js"></script>
+<script src="/resources/scripts/picturefill.js"></script> <!--  Note: do roll-up before live load -->
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-41129064-1', 'af.cm');
+  ga('send', 'pageview');
+
+</script>-->
+  
+</body>
+</html>
